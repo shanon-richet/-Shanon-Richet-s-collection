@@ -1,0 +1,17 @@
+
+main{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto ;
+}
+
+table{
+    margin-top: 50px;
+}
+li{ 
+    list-style-type: none;
+    background-color: white;
+    width:250px;
+    height:50px;
+}
+
