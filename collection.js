@@ -2,83 +2,86 @@ const collection=[
     {
         artist:'Mr Gasmask',
         title: "Acid Attack",
-        link: "https://www.youtube.com/watch?v=CscbxxFNAqc&ab_channel=Essencis",
+        link: "Addiction EP (2016, Vinyl)",
         genre: 'Acid Core'
     },
     {
         artist:'Mr Gasmask',
         title:"Distorted Drum Disciples",
-        link: "https://www.youtube.com/watch?v=St2qdwlEbkw&list=RDCscbxxFNAqc&index=4&ab_channel=P4Kid3RM",
+        link: 'Neurotrope 36 (2016,Vinyl)',
         genre: "Acid Core"
     },
     {
         artist:"Mr Gasmask",
         title:"Chiaroscuro",
-        link:"https://www.youtube.com/watch?v=cBvlNq0GbHE&ab_channel=voe16",
+        link:"Dune 05 (2013, Vinyl)",
         genre: "Acid Core"
     },
     {
         artist:"Mr Gasmask",
         title: "Vonk",
-        link:"https://www.youtube.com/watch?v=uR2WV-yBZKQ&ab_channel=mrgasmask303",
+        link:"Analog Tecnè Model 07",
         genre:"Acid Core"
     },
     {
         artist:"Mr Gasmask",
-        title:"Geisterkranke",
-        link:"https://www.youtube.com/watch?v=IBtdR7Hadi8&ab_channel=ZwoarnAcide",
+        title:"Geisteskranke",
+        link: "The Future Is Late EP (2013, Vinyl)",
         genre:'Acid Core'
     },
     {
         artist:"Mr Gasmask & Acidolido",
         title:"Flesh Vessel",
-        link: "https://www.youtube.com/watch?v=O3UQa8y855c&ab_channel=EnfantsSagesproduction",
+        link: "Neurotrope 044(2016, Vinyl)",
         genre:"Acid Core"
     },
     {
         artist:"Mr Gasmask",
         title:"Crooked Cooking",
-        link:"https://www.youtube.com/watch?v=bfLsgYM2uns&ab_channel=ILoveTekno%E0%A5%90",
+        link: "Neurotrope 044(2016, Vinyl)",
         genre:"Acid Core"
     },
     {
         artist:'Mr Gasmask',
-        title: "Live Mr Gasmask",
-        link: "https://www.youtube.com/watch?v=zGLF4A1yavk&t=171s&ab_channel=WEARERAVE",
+        title: "Urtekram",
+        link: "Old Skull, Vol 17 (2019)",
         genre: 'Acid Core'
     }, 
     {
         artist:'Mr Gasmask',
         title: "Jawbreaker",
-        link:'https://www.youtube.com/watch?v=FVgskJ6ND58&ab_channel=robber260989',
+        link:"Jawbreaker E.P. (2010, Vinyl)",
         genre: 'Acid Core'
 
     },
     {
         artist:'Mr Gasmask',
-        title: "Jawbreaker",
-        link: 'https://www.youtube.com/watch?v=AYqsBsrlHxE&list=PLG8JW1UeAE1hTc8d6VTPHqqfueSjXR5OE&index=12&ab_channel=RolandBassline',
+        title: "Time out Forever",
+        link: "Jawbreaker E.P. (2010, Vinyl)",
         genre: 'Acid Core',
-    }
+        }
 ]
+
 var main= document.createElement("main");
 document.body.appendChild(main);
+console.log(document.body.childNodes);
+
 
 for (const track of collection) {
     console.log(track);
+   var table= document.createElement("table");
 
-    var table= document.createElement("table");
-
-    var li = document.createElement("li");
+    var li = document.createElement("h6");
     var text= document.createTextNode(track.artist);
 
-    var li2 = document.createElement("li");
+    var li2 = document.createElement("h3");
     var text2= document.createTextNode(track.title);
 
-    var li3 = document.createElement("li");
+    var li3 = document.createElement("article");
     var text3= document.createTextNode(track.link);
-   
-    var li4 = document.createElement("li");
+
+
+    var li4 = document.createElement("h5");
     var text4= document.createTextNode(track.genre);
 
     main.appendChild(table);
@@ -91,14 +94,9 @@ for (const track of collection) {
     li2.appendChild(text2);
     li3.appendChild(text3);
     li4.appendChild(text4);
-
 }
 
+document.body.style.backgroundColor= "indigo";
 
-var h = document.createElement("h");
-var titre= document.createTextNode("mr");
-
-
-document.body.style.backgroundColor= "purple";
 
 
